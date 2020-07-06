@@ -1,0 +1,279 @@
+body{
+	margin:0px;
+}
+section{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+#skills-style{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+    justify-content:center;
+}
+#body-header{
+	height:65vh;
+	opacity:0.8; 
+	background-image:url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed; 
+
+}
+.horizontal-list{
+	list-style:none;
+	padding-left:0px; 
+}
+
+.horizontal-list li{
+	display:inline-block; 
+	margin:7px 12px 12px 0px;
+}
+
+.horizontal-list li a{
+	color:white;
+	font-size:20px;
+	text-decoration:none;  
+}
+.horizontal-list li a:hover{
+	color:grey;
+	border-bottom: 1px solid white; 
+	transition:color 5s; 
+	}
+.text-center{
+	text-align:center; 
+}
+.heading{
+	color:white;
+	font-size:70px;  
+	margin:80px 0px 0px 0px;
+	margin-bottom: 0.5rem;
+}
+.social-icons li a img{
+	padding:5px;
+	/*border-radius:100% */
+}
+.social-icons li a img:hover{
+	box-shadow: 0px 0px 8px 7px rgba(230,196,196,0.3);
+}
+#about
+{
+height:auto;
+width:100%;
+position:relative;
+}
+#description-para{
+	height:50vh;
+	width:60vh;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:-40px;
+}
+#my-image{
+	height:13rem;
+	width: 13rem;
+	margin:auto;
+	margin-top:-17vh;
+
+}
+#my-image img{
+	height:100%;
+	width:100%;  
+	border-radius:50%;
+	box-shadow: 0px 0px 6px 5px white; 
+}
+.large{
+	height:4rem;
+}
+#flex{
+	 display:flex;
+	 align-items:flex-end;
+    flex-wrap: wrap;
+}
+#skills
+{
+	height:60vh;
+	width:95vw;
+	margin:auto;
+    background-color:#F5F5F5;
+    /*display: flex;
+    flex-wrap:wrap;*/
+   
+
+}
+#skill-header{
+	color:#008000;
+	font-weight:400;
+	font-size:30px;
+    padding-top:20px;
+	letter-spacing:0.1rem;
+}
+#indicator{
+	height:1.9rem;
+	width:10rem;
+	margin:30px 40px 40px 30px;
+	background-color:lightgrey;
+	border-radius:20px 20px 20px 20px;
+	box-shadow:10px 10px 8px #888558;
+
+}
+#progress-85{
+	width:85%;
+	height:inherit;
+	background-color:orange;
+	text-align:center;
+	border-radius:20px 0px 0px 20px;
+}
+#name{
+	width:inherit;
+	height:inherit;
+	color:white;
+	font-style:bold;
+	padding:7px 10px 10px 10px;
+	/*text-align:justify;*/
+
+	
+}
+#progress-60{
+	width:60%;
+	height:inherit;
+	background-color:#5AC18E;
+	text-align:center;
+	border-radius:20px 0px 0px 20px;
+}
+#progress-65{
+	width:60%;
+	height:inherit;
+	background-color:#4CA3DD;
+	text-align:center;
+	border-radius:20px 0px 0px 20px;
+}
+#progress-45{
+	width:30%;
+	height:inherit;
+	background-color:#794044;
+	text-align:center;
+	border-radius:20px 0px 0px 20px;
+}
+#portfolio-heading{
+	color:#008000;
+	font-weight:400;
+	font-size:30px;
+    padding-top:20px;
+	letter-spacing:0.1rem;
+}
+#contacts{
+	height:65vh;
+	width:95vw;
+	margin:auto;
+	background:linear-gradient(90deg,#0f0c29,#302b63,#24243e);
+}
+#contacts-header{
+	font-size: 40px;
+	color:white;
+	padding-top:20px;
+	letter-spacing:0.1rem;
+}
+.contact-form{
+	width: 25%;
+	height: 100%;
+	margin:20px 600px 0px 0px;
+	justify-content:space-around;
+	display:flex;
+	flex-direction:column;
+}
+.input-fields{
+	display: flex;
+	flex-direction: column;
+}
+.input-fields .input{
+	margin:10px 0px;
+	background:transparent;
+	border:0;
+	border-bottom:2px solid #c5ecfd;
+	color:#c5ecfd;
+	padding:10px;
+	width: 100%;
+	outline: none;
+
+}
+::-webkit-input-placeholder{
+  color:#c5ecfd;
+}
+.btn{
+	background-color:orange;
+	width:50%;
+	padding:10px;
+	margin:10px 0px 0px 78px;
+	border-radius:20px;
+	color:Black;
+	font-weight:400;
+	outline:none;
+	/*font-size:15px;*/
+}
+.work-par{
+	width:65%;
+	/*border:2px solid black;*/
+	position:relative;
+}
+.work-item{
+	width:40%;
+	height:150px;
+	/*border:1px solid black;*/
+	margin-left:27px;
+	margin-top:7px;
+	margin-bottom:5px;
+	position:relative;
+}
+.work-item:nth-child(2n){
+	left:54%;
+}
+#timeline-div{
+	height: 75%;
+	width: 0%;
+	border:1px dashed #302b63;
+	position: absolute;
+	left:50%;
+	top:10%;
+	bottom:10%;
+}
+#work-h{
+	
+	/*border:1px solid black;*/
+	color:#260261;
+	font-size:21px;
+	text-align: right;
+	margin-top:2px;
+
+}
+#work-c{
+	color:orange;
+	font-size:20px;
+	text-align:right;
+	margin-top:2px;
+}
+#work-d{
+	font-size:18px;
+	text-align:right;
+}
+#work-des{
+  width: 100%;
+}
+.timeline-tar{
+	position:sticky;
+	height:5px;
+	width:11px;
+	left:52%;
+	top:25%;
+	transform: rotate(180deg);
+}
+/*#bdiv{
+	width:70%;
+    margin:0px 0px 40px 0px;
+	border:2px solid white;
+}*/
+#end{
+	height: 365px;
+}
