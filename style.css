@@ -64,12 +64,18 @@ height:auto;
 width:100%;
 position:relative;
 }
-#description-para{
-	height:50vh;
-	width:60vh;
+.description-para-div{
+	height:30vh;
+	width:60%;
 	margin:auto;
 	margin-top:20px;
-	margin-bottom:-40px;
+}
+#description-para{
+	letter-spacing:1px;
+	font-family: sans-serif;
+	text-align:justify;
+	font-size: 15px;
+	font-weight:bolder;
 }
 #my-image{
 	height:13rem;
@@ -157,6 +163,10 @@ position:relative;
 	text-align:center;
 	border-radius:20px 0px 0px 20px;
 }
+#portfolio{
+	width: 80%;
+	margin: auto;
+}
 #portfolio-heading{
 	color:#008000;
 	font-weight:400;
@@ -164,7 +174,30 @@ position:relative;
     padding-top:20px;
 	letter-spacing:0.1rem;
 }
+.portfolio-img-outer-div{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.portfolio-img-inner-div{
+
+	width:250px;
+	height:250px;
+	margin-left: 90px;
+}
+.portfolio-img-inner-div img{
+	margin-left:25px;
+	margin-top: 25px;
+}
+.project-name{
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+}
 #contacts{
+	font-family: sans-serif;
 	height:65vh;
 	width:95vw;
 	margin:auto;
@@ -179,11 +212,46 @@ position:relative;
 .contact-form{
 	width: 25%;
 	height: 100%;
-	margin:20px 600px 0px 0px;
+	margin-left: 160px;
 	justify-content:space-around;
 	display:flex;
 	flex-direction:column;
+	/*border:1px solid white;*/
 }
+.outer-div-contact{
+	width: 90%;
+	height: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-details{
+	width: 35%;
+	height: 100%;
+	margin-left: 160px;
+}
+.get-in-touch{
+	width:100%;
+	height:25%;
+	margin-top:50px;
+    color: white
+}
+.get-in-touch p{
+	color: #c5ecfd;
+	font-size: 12px;
+	text-align: justify;
+}
+.my-address{
+	width:100%;
+	height:25%;
+	margin-top: 5px;
+	color: white
+}
+.my-address p{
+	color: #c5ecfd;
+	font-size: 12px;
+	text-align: justify;
+}
+
 .input-fields{
 	display: flex;
 	flex-direction: column;
@@ -203,12 +271,12 @@ position:relative;
   color:#c5ecfd;
 }
 .btn{
-	background-color:orange;
-	width:50%;
+	background:transparent;
+	width:70%;
 	padding:10px;
-	margin:10px 0px 0px 78px;
-	border-radius:20px;
-	color:Black;
+	margin:15px 0px 0px 58px;
+	border-color: #c5ecfd;
+	color:#c5ecfd;
 	font-weight:400;
 	outline:none;
 	/*font-size:15px;*/
@@ -276,4 +344,139 @@ position:relative;
 }*/
 #end{
 	height: 365px;
+}
+
+
+.overlay{
+	position: absolute;;
+	top:348%;
+	left:19%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay{
+	opacity: 1;
+}
+.overlay2{
+	position: absolute;;
+	top:348%;
+	left:44%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay2{
+	opacity: 1;
+}
+.overlay3{
+	position: absolute;;
+	top:348%;
+	left:69%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay3{
+	opacity: 1;
+}
+
+.overlay4{
+	position: absolute;;
+	top:394%;
+	left:19%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay4{
+	opacity: 1;
+}
+.overlay5{
+	position: absolute;;
+	top:394%;
+	left:44%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay5{
+	opacity: 1;
+}
+.overlay6{
+	position: absolute;;
+	top:394%;
+	left:69%;
+	bottom:0;
+	right:0;
+	height:200px;
+	width:200px;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(192,192,192,0.9);
+	line-height: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	color:black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.portfolio-img-inner-div:hover .overlay6{
+	opacity: 1;
 }
